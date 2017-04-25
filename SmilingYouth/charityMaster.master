@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>LaughingColours | About</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        lblDate.Text = DateTime.Now.ToLongDateString();
+    }
+</script>
+</head>
+<body>
+<form id="form1" runat="server">
+    <div class="header">
+      <div class="logo">
+        <h1><a><span>Smiling</span>Youth<small>A Pathway to home...</small></a></h1>
+      </div>
+      <div class="clr"></div>
+      <div class="hbg"></div>
+    </div>
+    <table id="masterTable">
+            <tr><td></td><td>
+                    <div id="breadcrumbs">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                            <PathSeparatorTemplate>  -->  </PathSeparatorTemplate>
+                        </asp:SiteMapPath>
+                    </div>
+                         </td></tr>
+            <tr>
+                <td class="menuSidebar">
+                    <div class="leftContent" >
+                          <asp:Menu StaticDisplayLevels="2" ID="Menu1" runat="server"
+                        DataSourceID="SiteMapDataSource1" Orientation="Vertical"
+                        StaticSubMenuIndent="25" CssClass="menu">
+                        <StaticSelectedStyle BackColor="#78bbe6" />
+                        <DynamicHoverStyle BackColor="LightSkyBlue"
+                            ForeColor="Black" />
+                        <DynamicMenuItemStyle BackColor="WhiteSmoke" />
+                        <StaticHoverStyle BackColor="#78bbe6" />
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" /></div>
+                    <div class="quote">
+                          <h2 class="star"><span>Wise Words</span></h2>            
+              <strong>"</strong> We can let circumstances rule us, or we can take charge and rule our lives from within.<strong>"</strong>
+            </div>
+                </td>
+                <td rowspan="2" class="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+                </td></tr>
+                 <tr><td><div class="leftContent">
+                     <asp:Calendar runat="server" ForeColor="White" SkinID="CalendarView">
+                </asp:Calendar></div>
+                </td>
+            </tr>
+    </table>
+
+
+        <div class="clr"></div>
+     <div class="clr"></div>
+<div class="footer">
+    <p class="lf">Copyright © 2016 Pathway to Home Organization. <asp:Label ID="lblDate" runat="server" /></p>
+    <p class="rf">Author: <asp:HyperLink ID="HyperLink1" runat="server" Text="Kalyani Singh" NavigateUrl="mailto:ksin57@student.monash.edu" /></p>      
+                  </div>
+    <div class="clr"></div>
+     </form>
+     </body>
+  
+</html>

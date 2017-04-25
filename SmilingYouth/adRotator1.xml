@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>images/home9.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText>
+
+    </AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>images/home1.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+</Advertisements>
